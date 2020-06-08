@@ -261,19 +261,11 @@ li {
 
 
 /*--------------------------------
- Menu
+ SP_Menu
 ---------------------------------*/
-.menu {
-  position: fixed;
-  right: 2%;
-  top: 5%;
-}
-
-.menu img {
-  width: 80%;
-  display: block;
-  margin-left: 20%;
-}
+.mpc-only {
+    display: none;
+  }
 
 
 /*--------------------------------
@@ -361,7 +353,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .about-image-wrapper {
@@ -380,6 +372,10 @@ li {
 
 .about-body p:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.spin-font {
+  font-family: 'Spinnaker', sans-serif;
 }
 
 /*--------------------------------
@@ -471,6 +467,44 @@ li {
   width: 100px;
 }
 
+.curriculum {
+  margin-top: 3.5rem;
+}
+
+.curriculum-head {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 2.0rem;
+}
+
+.curriculum-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-wrp1 {
+  width:30%;
+}
+
+.skill-wrp2 {
+  width:39%;
+}
+
+.skill-wrp3 {
+  width:21%;
+}
+
+.skill-lead-head {
+  font-size: 90%;
+  margin-bottom: 0.6rem;
+}
+
+.skill-li li {
+  list-style: square;
+  list-style: inside;
+  font-size: 85%;
+}
+
 /*--------------------------------
  Contact
 ---------------------------------*/
@@ -537,6 +571,53 @@ li {
   /*background-color: #ccc;*/
 /*}*/
 
+
+
+/*media Queries 1024
+----------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  
+  .lpc-only {
+    display: none;
+  }
+  
+  .mpc-only {
+    display: block;
+  }
+  
+  .spmenu {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    width: 8%;
+  }
+  
+  .spmenu img {
+    width: 100%;
+    display: block;
+  }  
+}
+
+
+
+/*media Queries 1023
+----------------------------------------------------*/
+@media screen and (max-width: 1023px) {
+  
+  .curriculum-body {
+    flex-direction: column;
+    padding: 0 24%;
+  }
+  
+  .skill-wrp1,.skill-wrp2,.skill-wrp3 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  } 
+  
+}
+
+
+
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -580,7 +661,7 @@ li {
 
   /* レイアウト */
   .wrapper {
-    padding-top: 82px;
+    padding-top: 0;
   }
 
   .section {
@@ -593,7 +674,7 @@ li {
 
   /* ヘッダー */
   .header {
-    height: 70vh;
+    height: 100vh;
   }
 
   .logo-title {
@@ -643,7 +724,9 @@ li {
   }
 
   .works-list {
-    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .works-item {
@@ -675,6 +758,11 @@ li {
   }
 
   /* Skill */
+  
+  /*.sp-left {*/
+  /*  text-align: left;*/
+  /*}*/
+  
   .skill-list {
     display: block;
     margin-bottom: 0;
@@ -724,6 +812,12 @@ li {
   .rate5:after {
     width: 95px;
   }
+  
+  .curriculum-body {
+    flex-direction: column;
+    padding: 0 3%;
+  }
+  
 
   /* Contact */
   .contact-item {
