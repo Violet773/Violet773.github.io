@@ -792,7 +792,20 @@ li {
     margin: 0 10px;
   }
   
+  /* pageアップボタン*/
+  .pageup img {
+    width: 40%;
+    display: block;
+    margin-left: 60%;
+  }
+  
   /* menuボタン */
+  
+  .menu-btn img {
+    width: 25%;
+    margin-left: 75%;
+  }
+  
   .menu-li img {
     width: 5%;
   }
