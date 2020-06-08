@@ -16,6 +16,17 @@ $(function () {
   $(".works-url").on("click", "a", function (e) {
     e.stopPropagation();
   });
+  
+  
+  //メニューボタンtoggle
+   $(".menu-btn").click(function(){
+    $(".menu-li").slideToggle();
+  });
+  
+  $(".min-link").on('click', function() {
+    $(".menu-li").hide();
+  });
+  
 
   //ページ内スクロール
   var $nav = $(".gnav");
@@ -35,19 +46,6 @@ $(function () {
     return false;
   });
   
-  // $('a[href^="#"]').click(function(){
-  //   //スクロールのスピード
-  //   var speed = 500;
-  //   //リンク元を取得
-  //   var href= $(this).attr("href");
-  //   //リンク先を取得
-  //   var target = $(href == "#" || href == "" ? 'html' : href);
-  //   //リンク先までの距離を取得
-  //   var position = target.offset().top;
-  //   //スムーススクロール
-  //   $("html, body").animate({scrollTop:position}, speed, "swing");
-  //   return false;
-  // });
 
   //ページトップ
   $("#js-page-top").on("click", function () {
