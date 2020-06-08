@@ -161,7 +161,7 @@ li {
 ---------------------------------*/
 .menu-btn {
   position: fixed;
-  right: 2%;
+  right: 5%;
   top: 2%;
 }
 
@@ -181,7 +181,7 @@ li {
   left: 0;
   text-align: center;
   z-index: 9999;
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 .menu-li img {
@@ -530,6 +530,10 @@ li {
   text-align: center;
 }
 
+.contact-text p {
+  display: inline-block;
+}
+
 /*--------------------------------
  フッター
 ---------------------------------*/
@@ -550,7 +554,7 @@ li {
 
 .pageup {
   position: fixed;
-  right: 3%;
+  right: 6%;
   bottom: 3%;
   cursor: pointer;
 }
@@ -645,13 +649,13 @@ li {
   }
 
   .logo-title {
-    font-size: 10px;
+    font-size: 13px;
     letter-spacing: 0.25rem;
     font-family: 'Cabin Sketch', cursive;
   }
 
   .logo-subtitle {
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Spinnaker', sans-serif;
     font-weight: normal;
     letter-spacing: 0.35rem;
